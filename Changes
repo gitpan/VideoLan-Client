@@ -1,5 +1,8 @@
 Revision history for VideoLan-Client
 
-0.01    Date/time
+0.11    10/07/08
+        some install bugs (make test...) have been corrected. no news features
+
+0.1    Date/time
         First version, released on an unsuspecting world.
 

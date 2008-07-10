@@ -14,7 +14,7 @@ Version 0.1
 
 =cut
 
-our $VERSION = '0.1';
+our $VERSION = '0.11';
 
 
 =head1 SYNOPSIS
@@ -76,9 +76,9 @@ sub new {
 
 =over 4
 
-=item HOST
+=item host 
 
-The default I<HOST> is C<"localhost">
+The default I<host> is C<"localhost">
 
 =back
 
@@ -92,9 +92,9 @@ sub host {
 
 =over 4
 
-=item PORT
+=item port
 
-The default I<PORT> is C<4212>
+The default I<port> is C<4212>
 
 =back
 
@@ -108,9 +108,9 @@ sub port {
 
 =over 4
 
-=item TIMEOUT
+=item timeout
 
-The default I<TIMEOUT> is C<10> secondes
+The default I<timeout> is C<10> secondes
 
 =back
 
@@ -124,9 +124,9 @@ sub timeout  {
 
 =over 4
 
-=item PASSWD
+=item passwd
 
-The default I<PASSWD> is C<admin> secondes
+The default I<passwd> is C<admin> secondes
 
 =back
 
@@ -140,11 +140,11 @@ sub passwd {
 
 =over 4
 
-=item DEBUG
+=item debug 
 
-The default I<DEBUG> is undef.
-if DEBUG is set to $file, $file will contains the telnet connection log.
-DEBUG have to be set before the B<login> method
+The default I<debug> is undef.
+if debug is set to $file, $file will contains the telnet connection log.
+debug have to be set before the B<login> method
 
 =back
 

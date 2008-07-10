@@ -8,7 +8,8 @@ my $builder = Module::Build->new(
     dist_author         => 'Cyrille Hombecq <cyrille.hombecq@gmail.com>',
     dist_version_from   => 'lib/VideoLan/Client.pm',
     build_requires => {
-        'Test::More' => 0,
+        'Net::Telnet' => 0,
+#        'Test::More' => 0,
     },
     add_to_cleanup      => [ 'VideoLan-Client-*' ],
     create_makefile_pl => 'traditional',
