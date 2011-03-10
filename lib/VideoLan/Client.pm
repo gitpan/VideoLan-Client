@@ -14,7 +14,7 @@ Version 0.1
 
 =cut
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 
 =head1 SYNOPSIS
@@ -171,7 +171,7 @@ If succed return 1, else return 0.
 sub login {
     my $self = shift;
     my $retour;
-    $self->{TELNET} = new Net::Telnet (Timeout => $self->{TIMEOUT}, Prompt => "/> /", Port => $self->{PORT});
+    $self->{TELNET} = new Net::Telnet (Timeout => $self->{TIMEOUT}, Prompt => "/> /", Port => $self->{PORT}, Errmode    => 'return');
     if(defined($self->{DEBUG})) {
         $self->{TELNET}->input_log($self->{DEBUG});
     }
@@ -313,7 +313,7 @@ sub media_play {
 sub media_stop {
     my $self = shift;
     my $media = shift;
-    $self->cmd('control ' . $media . ' play');
+    $self->cmd('control ' . $media . ' stop');
 }
 
 
