@@ -10,11 +10,11 @@ VideoLan::Client - interact with VideoLan Client using telnet connection
 
 =head1 VERSION
 
-Version 0.1
+Version 0.13
 
 =cut
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 
 =head1 SYNOPSIS
@@ -228,7 +228,7 @@ sub cmd {
     my $self = shift;
     my $cmd = shift;
     my @retour = $self->{TELNET}->cmd($cmd . "\n");
-    $self->{TELNET}->waitfor("/> /");
+    #~ $self->{TELNET}->waitfor("/> /");
     return @retour;
 }
 

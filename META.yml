@@ -1,6 +1,6 @@
 ---
 name: VideoLan-Client
-version: 0.12
+version: 0.13
 author:
   - 'Cyrille Hombecq <cyrille.hombecq@gmail.com>'
 abstract: interact with VideoLan Client using telnet connection
@@ -14,7 +14,7 @@ configure_requires:
 provides:
   VideoLan::Client:
     file: lib/VideoLan/Client.pm
-    version: 0.12
+    version: 0.13
 generated_by: Module::Build version 0.340201
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
